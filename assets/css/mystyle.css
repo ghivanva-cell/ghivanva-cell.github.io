@@ -49,3 +49,20 @@
         filter: blur(0);
     }
 }
+@keyframes slideBottomRightLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(50px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-sma {
+  animation: slideBottomRightLeft 1.5s ease-out forwards;
+}

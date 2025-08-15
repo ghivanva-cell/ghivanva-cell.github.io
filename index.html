@@ -160,15 +160,16 @@ Author URL: http://w3layouts.com
           <p>Saya menempuh pendidikan di <b>MTSn 1 Sungai Penuh</b> dan lulus pada tahun <b>2025</b>.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 grids-feature mt-lg-0">
-        <div class="area-box mb-lg-0">
-          <div class="icon">
-            <span class="fa fa-school"></span>
-          </div>
+      <div class="col-lg-4 col-sm-6 grids-feature mt-lg-0" id="sma">
+    <div class="area-box mb-lg-0">
+        <div class="icon">
+          <span class="fa fa-school"></span>
+       </div>
           <h4><a href="#feature" class="title-head">SMA</a></h4>
-           <p>Saya menempuh pendidikan di <b>MAN 1 Sungai Penuh</b>dan sekarang masih bersekolah</b>.</p>
-        </div>
-      </div>
+         <p>Saya menempuh pendidikan di <b>MAN 1 Sungai Penuh</b>dan sekarang masih bersekolah</b>.</p>
+    </div>
+</div>
+
     </div>
 </section>
 <!-- //bottom-grids-->
@@ -179,7 +180,7 @@ Author URL: http://w3layouts.com
       <div class="container py-md-5 py-3">
         <div class="cwp4-two row">
           <div class="cwp4-image col-lg-6 pr-lg-5 mb-lg-0 mb-5">
-            <img src="assets/images/pmd.jpg" class="img-curve img-fluid" alt="" />
+            <img src="assets/images/pmdn2.jpg" class="img-curve img-fluid" alt="" />
           </div>
           <div class="cwp4-text col-lg-6">
             <h6 class="sub-title" id="Tentang">Tentang Ghivan</h6>
@@ -276,6 +277,29 @@ document.addEventListener('DOMContentLoaded', function () {
   }, { threshold: 0.3 });
   targets.forEach(t => io.observe(t));
 });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const sd = document.querySelector('#sd');
+  const smp = document.querySelector('#smp');
+  const sma = document.querySelector('#sma');
+
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (entry.target.id === 'sma') {
+          entry.target.classList.add('animate-sma'); // animasi SMA khusus
+        } else {
+          entry.target.classList.add('animate'); // animasi umum (SD/SMP)
+        }
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  [sd, smp, sma].forEach(el => io.observe(el));
+});
+
 </script>
 
 <script src="assets/js/bootstrap.min.js"></script>
