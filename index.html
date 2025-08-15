@@ -176,17 +176,36 @@ Author URL: http://w3layouts.com
   <!--//features-->
   <!--/services-->
   <section class="w3l-services1">
-    <div class="cwp4-text col-lg-6">
-        <h6 class="sub-title ghivan-animate">Tentang Ghivan</h6>
-        <h3 class="hny-title ghivan-animate">Ghivan Dwi Septiawan</h3>
-            <p class="ghivan-animate">Ghivan lahir di Sungai Penuh, 3 september 2010...</p>
-            <ul class="cont-4">
+    <section class="w3l-services1">
+          <div id="content-with-photo4-block" class="py-5">
+            <div class="container py-md-5 py-3">
+             <div class="cwp4-two row">
+        <!-- Gambar (TIDAK DIANIMASIKAN) -->
+               <div class="cwp4-image col-lg-6 pr-lg-5 mb-lg-0 mb-5">
+               <img src="assets/images/pmdng.jpg" class="img-curve img-fluid" alt="" />
+              </div>
+
+        <!-- Teks (DIANIMASIKAN SATU PER SATU) -->
+             <div class="cwp4-text col-lg-6">
+                <h6 class="sub-title ghivan-animate">Tentang Ghivan</h6>
+                <h3 class="hny-title ghivan-animate">Ghivan Dwi Septiawan</h3>
+                <p class="ghivan-animate">
+                     Ghivan lahir di Sungai Penuh, 3 september 2010, Dan sekarang tinggal di Desa Kampung Tengah,
+                     Kec.Koto Baru, Kota Sungai Penuh, Provinsi Jambi, Jambi.
+                 </p>
+
+          <ul class="cont-4">
             <li class="ghivan-animate"><span class="fa fa-check"></span>Desa Kampung Tengah</li>
             <li class="ghivan-animate"><span class="fa fa-check"></span>Sungai Penuh</li>
             <li class="ghivan-animate"><span class="fa fa-check"></span>3 September 2010</li>
-          <li class="ghivan-animate"><span class="fa fa-check"></span>14 Tahun</li>
-  </ul>
-</div>
+            <li class="ghivan-animate"><span class="fa fa-check"></span>14 Tahun</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   </section>
 <!-- disable body scroll which navbar is in active -->
@@ -290,7 +309,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </script>
 <script>
-  
 document.addEventListener('DOMContentLoaded', function () {
   const ghivanSection = document.querySelector('.cwp4-text');
   const animatedItems = document.querySelectorAll('.ghivan-animate');
@@ -309,8 +327,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   observer.observe(ghivanSection);
 });
-
 </script>
+
 
 <script src="assets/js/bootstrap.min.js"></script>
 
