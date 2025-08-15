@@ -104,3 +104,19 @@
 .socials a:hover {
   color: #0d6efd; /* Bootstrap primary color */
 }
+
+#wa:hover {
+    color: green;
+}
+
+#ig:hover {
+    color: purple
+}
+
+#github:hover {
+    color:black
+}
+
+#email:hover {
+    color: red;
+}
