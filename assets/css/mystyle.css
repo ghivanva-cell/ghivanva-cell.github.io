@@ -81,4 +81,10 @@
   opacity: 0;
   animation: fadeInUp 0.8s ease forwards;
 }
+.cwp4-image img {
+  max-width: 85%;  /* Ubah persen sesuai keinginan (misal: 70%, 60%) */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Tengah secara horizontal */
+}
 
